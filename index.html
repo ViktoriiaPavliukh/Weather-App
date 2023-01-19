@@ -48,32 +48,26 @@
             </div>
           </div>
         </form>
-        <h1 id="city">Paris</h1>
+        <h1 id="city"></h1>
         <ul>
-          <li id="date"></li>
-          <li>Partly Cloudy</li>
+          <li>Last updated: <span id="date"></span></li>
+          <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-6">
-            <div class="clearfix">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Cloudy icon"
-                class="weather-icon float-left"
-              />
-              <div class="float-left">
-                <span class="temperature" id="temperature">17</span
-                ><span class="units"
-                  >°C | <a href="#" id="fahrenheit">°F</a></span
-                >
-              </div>
+            <div class="left-side">
+              <img src="" alt="empty" id="icon" />
+              <strong class="temperature" id="temperature"></strong
+              ><span class="units"
+                ><a href="#" id="celsius-link" class="active">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a></span
+              >
             </div>
           </div>
           <div class="col-6">
             <ul>
-              <li>Precipitation: 0%</li>
-              <li id="humidity">Humidity: 77%</li>
-              <li>Wind: 8 km/h</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
             </ul>
           </div>
         </div>
